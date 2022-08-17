@@ -503,6 +503,8 @@ si tienes dudas existenciales con respecto a estas decisiones. No existe una
 * [Path](https://nodejs.org/api/path.html)
 * [Linea de comando CLI](https://medium.com/netscape/a-guide-to-create-a-nodejs-command-line-package-c2166ad0452e)
 
+### Únete al canal de Slack **#project-md-links**
+
 ## 9. Checklist
 
 ### General
