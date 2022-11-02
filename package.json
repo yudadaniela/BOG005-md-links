@@ -10,7 +10,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "npm test"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,10 @@
     "chalk": "^4.1.2",
     "file-system": "^2.2.2",
     "marked": "^4.1.1",
+    "node-fetch": "^2.6.7",
     "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "jest": "^29.2.2"
   }
 }

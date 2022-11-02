@@ -1,6 +1,7 @@
 var file = require("file-system");
 var fs = require("fs");
 const path = require("path");
+const chalk = require("chalk");
 
 function validateConvertPath(route) {
   const pathValide = path.isAbsolute(route);
@@ -17,19 +18,18 @@ function validateConvertPath(route) {
 const mdSearcher = (route) => {
   let mdArray = [];
   if(fs.statSync(route).isFile() && path.extname(route) !== '.md'){
-    console.log('Este archivo no es .md');
+    console.log(chalk.blue('Este archivo no es .md'));
   } else if (fs.statSync(route).isDirectory()===true) { 
 
     fs.readdirSync(route).forEach(file => {
-          let joinRoute = path.join(route, file);
-          mdArray = mdArray.concat(mdSearcher(joinRoute)); 
+          let newRoute = path.join(route, file);
+          mdArray = mdArray.concat(mdSearcher(newRoute)); 
       });
   } else{ 
       if (fs.statSync(route).isFile()&& path.extname(route) === '.md') {
         mdArray.push(route);
       }
   }
-  
   return mdArray;
 }
 
