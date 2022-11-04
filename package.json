@@ -10,7 +10,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,7 @@
   "homepage": "https://github.com/yudadaniela/BOG005-md-links#readme",
   "dependencies": {
     "chalk": "^4.1.2",
+    "figlet": "^1.5.2",
     "file-system": "^2.2.2",
     "marked": "^4.1.1",
     "node-fetch": "^2.6.7",

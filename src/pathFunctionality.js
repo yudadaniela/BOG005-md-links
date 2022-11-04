@@ -18,7 +18,7 @@ function validateConvertPath(route) {
 const mdSearcher = (route) => {
   let mdArray = [];
   if(fs.statSync(route).isFile() && path.extname(route) !== '.md'){
-    console.log(chalk.blue('Este archivo no es .md'));
+    console.log(chalk.underline.bgRed('Este archivo no es .md'));
   } else if (fs.statSync(route).isDirectory()===true) { 
 
     fs.readdirSync(route).forEach(file => {

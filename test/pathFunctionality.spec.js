@@ -3,6 +3,7 @@ const {validateConvertPath, mdSearcher} = require("../src/pathFunctionality");
 const path = 'README.md'
 const pathAbs = 'C:\\Users\\Daniel\\BOG005-md-links\\README.md'
 const pathAbsNoMd = 'C:\\Users\\Daniel\\BOG005-md-links\\index.js'
+const pathDirectory= 'C:\Users\Daniel\BOG005-md-links\src\carpetaPrueba'
 
 
 
@@ -27,9 +28,19 @@ describe('test function mdSearcher', () => {
   it("file it's a .md", () => {
     expect(mdSearcher(pathAbs)).toStrictEqual(['C:\\Users\\Daniel\\BOG005-md-links\\README.md']);
   });
-  it("file it's a .md", () => {
-    expect(mdSearcher(pathAbsNoMd)).toStrictEqual('Este archivo no es .md');
-  });
+  // it("file it's not a .md", () => {
+  //   expect(mdSearcher(pathAbsNoMd)).toBe(console.log);
+  // });
+  // it("It's directory", () => {
+  //   expect(mdSearcher(pathDirectory)).toBe(['C:\\Users\\Daniel\\BOG005-md-links\\src\carpetaPrueba\\otra_carpeta\otro.md','C:\\Users\\Daniel\\BOG005-md-links\\src\\carpetaPrueba\\prueba.md']);
+  // });
+
+  // it('console.log the text "hello"', () => {
+  //   console.log = jest.fn();
+  //   log('hello');
+  //   // The first argument of the first call to the function was 'hello'
+  //   expect(console.log).toHaveBeenCalledWith('hello');
+  // });
 
 });
 
