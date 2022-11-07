@@ -2,7 +2,7 @@ const { validateConvertPath, mdSearcher } = require("./src/pathFunctionality");
 const { readFileMd, linkStatus } = require("./read");
 
 
-//let route = process.argv[2];
+// let route = process.argv[2];
 // const option = { validate: true};
 
 const mdLinks= (route, option) => (
