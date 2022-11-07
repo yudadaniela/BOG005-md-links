@@ -1,8 +1,8 @@
 const { validateConvertPath, mdSearcher } = require("./src/pathFunctionality");
 const { readFileMd, linkStatus } = require("./read");
-const chalk = require("chalk");
 
-let route = process.argv[2];
+
+//let route = process.argv[2];
 // const option = { validate: true};
 
 const mdLinks= (route, option) => (
@@ -18,21 +18,19 @@ const mdLinks= (route, option) => (
       } else {
         readFileMd(searcherMd).then((res) => resolve(res));
       }
-    
   })
-  
 )
 
 // mdLinks(route, { validate: true })
 module.exports = {mdLinks};
 
 // let route = process.argv[2];
-// //console.log(route);
+//console.log(route);
 
-// const validatePath = validateConvertPath(route);
-// console.log(validatePath);
-// const searcherMd = mdSearcher(validatePath);
-// console. log(mdSearcher(validatePath));
+//  const validatePath = validateConvertPath(route);
+//  console.log(validatePath);
+//  const searcherMd = mdSearcher(validatePath);
+//  console. log(mdSearcher(validatePath));
 //readFileMd(searcherMd).then(resultadoFinal => console.log(`Obtenido el resultado final: ${resultadoFinal}`));
 // console.log(readFileMd(searcherMd));
 // Promise.all(readFileMd(searcherMd)).then((result) =>

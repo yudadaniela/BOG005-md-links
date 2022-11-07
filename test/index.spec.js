@@ -44,7 +44,6 @@ describe("mdLinks", () => {
 
   it("mdLinks when validate is true", () => {
      mdLinks(path, { validate: true }).then((array) => {
-      console.log("ara: ", array);
       expect(array).toEqual(validatetrue);
     });
   });
