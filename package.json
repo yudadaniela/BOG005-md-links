@@ -21,6 +21,10 @@
   ],
   "author": "daniela nieto",
   "license": "ISC",
+  "bin":{ 
+    "mdlinks-yuda": "./cli.js"
+  },
+
   "bugs": {
     "url": "https://github.com/yudadaniela/BOG005-md-links/issues"
   },

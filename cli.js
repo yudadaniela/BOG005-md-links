@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const { stats, statsAndValide, } = require("./statsFunction");
 const { mdLinks } = require("./index");
 const chalk = require("chalk");
