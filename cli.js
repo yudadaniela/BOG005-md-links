@@ -41,7 +41,7 @@ const cli = (route, argv) => {
   
  }, 100); 
 
-  figlet('MdLinks-Yuda',{
+  figlet('MdLinks-yuda',{
     font: 'Standard',
     width: 80,
     whitespaceBreak: true
